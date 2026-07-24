@@ -40,40 +40,40 @@ Place `A1.zip` under `data/open/A1.zip`.
 Smoke test:
 
 ```powershell
-python benchmarks/kg_fm/kg_fm_benchmark.py --fixture
+python kg_fm_benchmark.py --fixture
 ```
 
 Run with an extracted A1 directory:
 
 ```powershell
-python benchmarks/kg_fm/kg_fm_benchmark.py --data-dir data/open/A1
+python kg_fm_benchmark.py --data-dir data/open/A1
 ```
 
 Run with A1 zip:
 
 ```powershell
-python benchmarks/kg_fm/kg_fm_benchmark.py --data-dir data/open/A1.zip
+python kg_fm_benchmark.py --data-dir data/open/A1.zip
 ```
 
 Try the built-in downloader if the network allows Zenodo:
 
 ```powershell
-python benchmarks/kg_fm/kg_fm_benchmark.py --download-a1
+python kg_fm_benchmark.py --download-a1
 ```
 
 Quick pass on a large file:
 
 ```powershell
-python benchmarks/kg_fm/kg_fm_benchmark.py --data-dir data/open/A1.zip --max-rows 500000
+python kg_fm_benchmark.py --data-dir data/open/A1.zip --max-rows 500000
 ```
 
 ## Outputs
 
 The script writes:
 
-- `benchmarks/kg_fm/results/results.json`
-- `benchmarks/kg_fm/results/results.md`
-- `benchmarks/kg_fm/results/kg_triples.nt`
+- `results.json`
+- `results.md`
+- `kg_triples.nt`
 
 `results.md` is formatted as a compact benchmark table for the poster.
 
